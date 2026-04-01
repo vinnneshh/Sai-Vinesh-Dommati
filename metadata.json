@@ -1,0 +1,5 @@
+{
+  "name": "Swag Unisex Salon",
+  "description": "Premium beauty parlour in Suraram, Hyderabad offering hair styling, facials, and bridal makeup services.",
+  "requestFramePermissions": ["geolocation"]
+}
