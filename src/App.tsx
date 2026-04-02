@@ -242,7 +242,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href={`https://wa.me/91${WHATSAPP_NUMBER}`}
+                href="#booking-box"
                 className="bg-[#D4AF37] text-zinc-950 px-8 py-4 md:px-10 md:py-5 rounded-full font-black text-base md:text-lg flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(212,175,55,0.3)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.4)] transition-all"
               >
                 BOOK NOW <ChevronRight className="w-5 h-5" />
@@ -325,9 +325,9 @@ const Services = () => {
                 <p className="text-zinc-400 text-sm leading-relaxed mb-6">
                   {service.description}
                 </p>
-                <div className="flex items-center text-[#D4AF37] text-xs font-bold tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0">
-                  Learn More <ArrowRight className="w-4 h-4" />
-                </div>
+                <a href="#contact" className="flex items-center text-[#D4AF37] text-xs font-bold tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0 cursor-pointer">
+                  Book Now <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </motion.div>
           ))}
@@ -587,7 +587,7 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent pointer-events-none" />
-              <div className="absolute bottom-12 left-12 right-12">
+              <div id="booking-box" className="absolute bottom-12 left-12 right-12 scroll-mt-24">
                 <div className="bg-[#D4AF37] p-8 rounded-3xl text-zinc-950">
                   <h4 className="font-black text-2xl uppercase mb-2">Ready for a change?</h4>
                   <p className="font-bold mb-6">Book your slot instantly via WhatsApp.</p>
